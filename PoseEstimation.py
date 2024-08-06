@@ -105,20 +105,20 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
                         )
                         distance_left_buffer.append(distance_left)
 
-                if idx == 12:  # Left Shoulder
+                if idx == 12: 
                     left_shoulder_x = x
                     left_shoulder_y = y
-                if idx == 13:  # Right Shoulder
+                if idx == 13:  
                     right_shoulder_x = x
                     right_shoulder_y = y
-                if idx == 16:  # Left Wrist
+                if idx == 16: 
                     left_wrist_x = x
                     left_wrist_y = y
-                if idx == 17:  # Right Wrist
+                if idx == 17:  
                     right_wrist_x = x
                     right_wrist_y = y
 
-            # T-Pose detection logic
+
             if (
                 left_wrist_x is not None and right_wrist_x is not None and
                 left_shoulder_x is not None and right_shoulder_x is not None and
